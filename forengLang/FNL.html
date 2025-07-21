@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Scholars - Best Language Institute in Delhi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .flag-icon {
+            width: 30px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .nav-link:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #3b82f6;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white py-2 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-2 md:mb-0">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>Vikaspuri, Delhi - 110018</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>096679 74697</span>
+                </div>
+            </div>
+          <div class="flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>info@careerscholars.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../assests/logo/logo.png" alt="Career Scholars" class="h-20">
+                <span class="ml-2 text-xl font-bold text-blue-900 hidden md:block">Career Scholars</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="../index.html" class="nav-link text-blue-900 font-medium hover:text-blue-700">Home</a>
+                <div class="relative group">
+                    <a href="#" class="nav-link text-blue-900 font-medium hover:text-blue-700 flex items-center">
+                        Courses <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50 hidden group-hover:block">
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">French</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">German</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Spanish</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">English</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">Japanese</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">IELTS</a>
+                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-50">More...</a>
+                    </div>
+                </div>
+                <a href="../contact/contact.html" class="nav-link text-blue-900 font-medium hover:text-blue-700">Contact</a>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-blue-900 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div class="hidden md:block">
+                <a href="../contact/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition duration-300">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 absolute w-full left-0 shadow-lg">
+            <a href="../index.html" class="block py-2 text-blue-900">Home</a>
+            <a href="../forengLang/FNL.html" class="block py-2 text-blue-900">Courses</a>
+            <a href="../contact/contact.html" class="block py-2 text-blue-900">Contact</a>
+            <a href="../contact/contact.html" class="block py-2 bg-blue-600 text-white text-center rounded-md my-2">Enroll Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div class="relative overflow-hidden">
+        <div class="slide">
+            <div class="bg-blue-800 py-20 px-4">
+                <div class="container mx-auto flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Best Language Courses in Delhi</h1>
+                        <p class="text-xl text-blue-100 mb-8">German, French, Spanish, IELTS and more with certified instructors</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-md font-bold text-center hover:bg-blue-50 transition duration-300">Enquire Now</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="../assests/fn/Princeton University Acceptance!.jpg" alt="Language Courses" class="max-w-full h-auto rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div class="bg-indigo-800 py-20 px-4">
+                <div class="container mx-auto flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Study Abroad Counseling</h1>
+                        <p class="text-xl text-indigo-100 mb-8">Get expert guidance for your international education journey</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#" class="bg-white text-indigo-900 px-6 py-3 rounded-md font-bold text-center hover:bg-blue-50 transition duration-300">Enquire Now</a>
+                            
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="../assests/fn/mit.jpg" alt="Study Abroad" class="max-w-full h-auto rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition duration-300">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 text-white p-2 rounded-full hover:bg-opacity-50 transition duration-300">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300" data-index="0"></button>
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition duration-300" data-index="1"></button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="../assests/logo/logo.png" alt="Oracle Badge" class="w-32 mb-6">
+                    <h2 class="text-3xl font-bold text-blue-900 mb-4">Career Scholars</h2>
+                    <h3 class="text-xl text-blue-700 mb-6">Language Learning Center</h3>
+                    <p class="text-gray-700 mb-6">
+                        Career Scholars is Delhi's leading language learning institute, dedicated to empowering individuals with the skills and confidence to excel in a globalized world. We offer a comprehensive range of language courses, catering to all levels and learning styles.
+                    </p>
+                    <p class="text-gray-700 mb-8">
+                        Speak Your Success: Empower Your Journey with Career Scholars – the premier institute for English, IELTS, TOEFL, PTE, Japanese, German, French, Spanish, Chinese & Arabic.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition duration-300">Enquire Now</a>
+                        <a href="#" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition duration-300">Read More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="../assests/fn/lan.jpg" alt="Language Learning" class="max-w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Why Career Scholars?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We provide the best language learning experience with our unique features</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Excellence in Education</h3>
+                    <p class="text-gray-600">Highest quality language education with proven methodologies</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Wide Range of Languages</h3>
+                    <p class="text-gray-600">Learn German, French, Spanish, Chinese, Arabic and more</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Flexible Learning Options</h3>
+                    <p class="text-gray-600">Online and offline classes to suit your schedule</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Focus on Communication</h3>
+                    <p class="text-gray-600">Practical conversation skills for real-world use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-2">Our Language Courses</h2>
+                    <p class="text-gray-600">Highlighted Programs in Language Courses</p>
+                </div>
+                <a href="#" class="flex items-center text-blue-600 font-medium hover:text-blue-800">
+                    View All <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- French Course -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="../assests/fn/fren.jpg" alt="French Language Course" class="w-full h-48 object-cover">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">French Language Course</h3>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>8:30 AM - 6:30 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>3 Months - 18 Months</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-chalkboard-teacher mr-1"></i> 48 Classes</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> 8-10 Students</span>
+                        </div>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-md font-medium transition duration-300">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- German Course -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="../assests/fn/ger.jpeg" alt="German Language Course" class="w-full h-48 object-cover">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">German Language Course</h3>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>8:30 AM - 6:30 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>3 Months - 18 Months</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-chalkboard-teacher mr-1"></i> 48 Classes</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> 8-10 Students</span>
+                        </div>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-md font-medium transition duration-300">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Spanish Course -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="../assests/fn/spain.webp" alt="Spanish Language Course" class="w-full h-48 object-cover">
+                       
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Spanish Language Course</h3>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>8:30 AM - 6:30 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>3 Months - 18 Months</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-chalkboard-teacher mr-1"></i> 48 Classes</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> 8-10 Students</span>
+                        </div>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-md font-medium transition duration-300">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Japanese Course -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="../assests/fn/jap.jpg" alt="IELTS Coaching" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-900 mb-2">Japanese Language Course</h3>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>8:30 AM - 6:30 PM</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>30 - 75 Days</span>
+                        </div>
+                        <div class="flex justify-between text-sm text-gray-600 mb-4">
+                            <span><i class="fas fa-chalkboard-teacher mr-1"></i> 20 Classes</span>
+                            <span><i class="fas fa-user-friends mr-1"></i> 7-10 Students</span>
+                        </div>
+                        <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 rounded-md font-medium transition duration-300">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Learning Approach Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Fostering Continuous Learning in Various Languages</h2>
+                <p class="text-xl text-gray-600">Exceptional Community</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">International Curriculum</h3>
+                    <p class="text-gray-700">We adhere to global curriculum standards in all our courses.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-graduate text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Certified Instructors</h3>
+                    <p class="text-gray-700">The faculty members consist of trained and experienced language instructors.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Teaching Methodologies</h3>
+                    <p class="text-gray-700">We regularly upgrade our teaching methodologies in all language courses to stay relevant.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-medal text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Superior Quality Training</h3>
+                    <p class="text-gray-700">We ensure continual high-quality education and training in all other languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-blue-900 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Book Your Seat For Free Career Counselling!</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">We'll make you understand the procedures.</p>
+            <a href="../contact/contact.html" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-md font-bold hover:bg-blue-100 transition duration-300">
+                Schedule a FREE Call
+            </a>
+        </div>
+    </section>
+
+
+ 
+    <!-- Stats Section -->
+    <section class="py-16 px-4 bg-blue-900 text-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">900+</div>
+                    <div class="text-xl">Happy Students</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <div class="text-xl">Best Awards Won</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">300+</div>
+                    <div class="text-xl">Batches Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <div class="text-xl">Languages</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+   
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">FAQ</h2>
+                <p class="text-xl text-gray-600">Frequently Asked Questions</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- FAQ 1 -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Q: What career options are available after studying at an international language institute?</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong>Translation & Interpretation:</strong> This is a classic career path for language learners. You can work as a freelance translator, a staff translator for a company, or a conference interpreter.</li>
+                            <li><strong>International Business & Sales:</strong> Multilingual skills are highly sought-after in today's globalized business world. You can pursue careers in international marketing, sales, or business development.</li>
+                            <li><strong>Education & Teaching:</strong> Become a language instructor and share your passion for languages with others. You can teach at international schools, language institutes, or online platforms.</li>
+                            <li><strong>Tourism & Hospitality:</strong> Language skills are crucial in the tourism and hospitality sectors. You can work as a tour guide, travel agent, hotel receptionist, or cruise ship staff.</li>
+                            <li><strong>Government & Diplomacy:</strong> Multilingualism is an asset for government jobs and diplomatic careers. You can work as a foreign service officer, embassy representative, or international relations specialist.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Q: How does an international language institute benefit my career?</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong>Language Proficiency:</strong> Gain fluency and strong communication skills in your chosen language, opening doors to various career paths.</li>
+                            <li><strong>Cultural Understanding:</strong> Develop cultural awareness and sensitivity, allowing you to navigate international settings effectively.</li>
+                            <li><strong>Networking Opportunities:</strong> Meet fellow language enthusiasts and professionals, potentially leading to future job opportunities.</li>
+                            <li><strong>Credentials & Certification:</strong> Earning language certificates from recognized institutions can boost your resume and demonstrate your expertise.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-blue-900 mb-2">Q: What languages are in high demand for careers?</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li><strong>Mandarin Chinese:</strong> China's growing economic power makes Mandarin a valuable asset in many fields.</li>
+                            <li><strong>Spanish:</strong> Widely spoken across the globe, Spanish is crucial for careers in tourism, business, and education in many regions.</li>
+                            <li><strong>French:</strong> French is the official language in many countries and holds importance in diplomacy, international organizations, and luxury goods sectors.</li>
+                            <li><strong>German:</strong> The language of engineering, manufacturing, and a strong European economy, German offers career prospects in these areas.</li>
+                            <li><strong>Arabic:</strong> The growing importance of the Middle East in global trade makes Arabic a valuable skill, especially for business and energy sectors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 px-4 bg-blue-800 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Book Your Seat For Free Career Counselling!</h2>
+            <a href="../contact/contact.html" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-md font-bold hover:bg-blue-100 transition duration-300">
+                APPLY NOW
+            </a>
+        </div>
+    </section>
+
+   
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+                <div>
+                    <img src="../assests/logo/logo.png" alt="Career Scholars" class="h-20 mb-4">
+                    <p class="text-gray-400">5+ years of excellence in test preparation. Helping students achieve their dream careers since 2020.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="../contact/contact.html" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../scc-jee/scc.html" class="text-gray-400 hover:text-white">SSC</a></li>
+                        <li><a href="../scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Mechanical)</a></li>
+                        <li><a href="../scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Electrical)</a></li>
+                        <li><a href="../scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Civil)</a></li>
+                        <li><a href="../cuet/cuet.html" class="text-gray-400 hover:text-white">CUET UG/PG</a></li>
+                        <li><a href="../forengLang/FNL.html" class="text-gray-400 hover:text-white">Foreign Languages</a></li>
+                        <li><a href="../tution/TH.html" class="text-gray-400 hover:text-white">School Tuitions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">Head Office:  B-57, Ground Floor, opp. Metro Pillar Number 605, Block-B, New Krishna Park, Vikaspuri, Delhi, 110018</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">+91 096679-74697</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">info@careerscholars.com</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 CareerScholars. All Rights Reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms & Conditions</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Slider Functionality
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.slide-indicator');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('bg-opacity-100'));
+            
+            slides[index].classList.add('active');
+            indicators[index].classList.add('bg-opacity-100');
+            currentSlide = index;
+        }
+        
+        document.getElementById('next-slide').addEventListener('click', () => {
+            let nextSlide = (currentSlide + 1) % slides.length;
+            showSlide(nextSlide);
+        });
+        
+        document.getElementById('prev-slide').addEventListener('click', () => {
+            let prevSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prevSlide);
+        });
+        
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                showSlide(parseInt(indicator.getAttribute('data-index')));
+            });
+        });
+        
+        // Auto slide change every 5 seconds
+        setInterval(() => {
+            let nextSlide = (currentSlide + 1) % slides.length;
+            showSlide(nextSlide);
+        }, 5000);
+        
+        // Show first slide initially
+        showSlide(0);
+    </script>
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Aptitude Olympiad | Career Launcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion.active .accordion-content {
+            max-height: 500px;
+        }
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 1.5rem;
+            top: 3rem;
+            height: calc(100% - 3rem);
+            width: 2px;
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://www.careerlauncher.com/olympiad/aptitude/images/CareerLauncherAptitudeOlympiadblack.png" alt="Career Launcher Logo" class="h-12">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+                <a href="#structure" class="text-gray-700 hover:text-blue-600 font-medium">Structure</a>
+                <a href="#preparation" class="text-gray-700 hover:text-blue-600 font-medium">Preparation</a>
+                <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+            <a href="#structure" class="block py-2 text-gray-700 hover:text-blue-600">Structure</a>
+            <a href="#preparation" class="block py-2 text-gray-700 hover:text-blue-600">Preparation</a>
+            <a href="#faq" class="block py-2 text-gray-700 hover:text-blue-600">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">National Aptitude Olympiad</h1>
+                <p class="text-xl mb-8">National-level benchmarking for students of classes 8-12</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#register" class="bg-white text-blue-700 font-bold py-3 px-6 rounded-lg text-center hover:bg-gray-100 transition duration-300">Register Now</a>
+                    <a href="#learn-more" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:text-blue-700 transition duration-300">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://www.careerlauncher.com/olympiad/images/students.png" alt="Students" class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Build a strong foundation for future success!</h2>
+            
+            <div class="flex flex-col md:flex-row mb-16 gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-6">For students in classes 8-12, the National Aptitude Olympiad fosters critical thinking and problem-solving prowess through an academic competition. This premier event challenges participants to apply analytical skills in a stimulating environment.</p>
+                    <p class="text-lg mb-6">Prepare for an exhilarating experience that sharpens cognitive abilities and opens doors to future success. Unleash your intellectual potential at the National Aptitude Olympiad.</p>
+                    <p class="text-lg">National Aptitude Olympiad, for classes 8-12, promotes academic and intellectual growth beyond the school curriculum. Tailored for each class, it benchmarks performance nationally, offering students insights into their potential.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Key Details</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-users text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Who?</h4>
+                                    <p>Grades 8-12</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">When</h4>
+                                    <p>May - Nov 2025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-book text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Subjects</h4>
+                                    <p>Problem-Solving, Logical Reasoning, Verbal Ability</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-laptop text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Mode</h4>
+                                    <p>Offline (in school)/Online</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-tag text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Fee</h4>
+                                    <p>₹150 (inc. of GST)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards Section -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Awards & Prizes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center feature-card transition duration-300">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-trophy text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">National Level</h4>
+                        <p class="text-gray-600">Top performers recognized at national level</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center feature-card transition duration-300">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-medal text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">State Level</h4>
+                        <p class="text-gray-600">Recognition for top state performers</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center feature-card transition duration-300">
+                        <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Certificates</h4>
+                        <p class="text-gray-600">Get recognized with national-level benchmarking</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Section -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Timeline</h3>
+                <div class="relative">
+                    <div class="space-y-8">
+                        <div class="timeline-item relative pl-16">
+                            <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <h4 class="font-bold text-lg mb-2">Prelims</h4>
+                                <p class="text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-blue-600"></i> May'25 To Aug'25</p>
+                                <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i> Your School/Online</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item relative pl-16">
+                            <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <h4 class="font-bold text-lg mb-2">Finals</h4>
+                                <p class="text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-blue-600"></i> Nov'25</p>
+                                <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i> Delhi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unique Features -->
+            <div>
+                <h3 class="text-2xl font-bold mb-8 text-center">What makes NAO Unique</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-brain text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Academic Excellence</h4>
+                                <p class="text-gray-600">Develops logical reasoning and critical thinking abilities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-bar text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Personalized Test Report</h4>
+                                <p class="text-gray-600">Each participant will receive detailed feedback on their performance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-award text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Recognition and Rewards</h4>
+                                <p class="text-gray-600">Win attractive prizes and earn accolades for your achievements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-lightbulb text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Critical Thinking</h4>
+                                <p class="text-gray-600">Challenge yourself with thought-provoking questions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Career Readiness</h4>
+                                <p class="text-gray-600">Prepare for future endeavors by identifying strengths</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md feature-card transition duration-300">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-video text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Aptitude Course</h4>
+                                <p class="text-gray-600">24-session program to improve aptitude skills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aptitude Course Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About the Aptitude Course</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 mb-12">
+                <div class="lg:w-1/2">
+                    <p class="text-lg mb-6">The pre-recorded 24-session Aptitude Course is an integral component of the NAO, designed to significantly enhance the participants' skills in problem-solving, logical reasoning, and verbal ability.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <h4 class="font-bold">Version 1</h4>
+                            <p class="text-sm text-gray-600">Grades 8 & 9</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <h4 class="font-bold">Version 2</h4>
+                            <p class="text-sm text-gray-600">Grades 10 & 11</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow text-center">
+                            <h4 class="font-bold">Version 3</h4>
+                            <p class="text-sm text-gray-600">Grade 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold mb-4">The course is divided into four main segments:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Skill Builder Orientation : 3 sessions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Foundations of Problem Solving : 7 sessions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Logical Reasoning Development : 7 sessions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>Verbal Ability Enhancement : 7 sessions</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Olympiad Structure Section -->
+    <section id="structure" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Olympiad Structure</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 mb-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-700">NAO Prelims</h3>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">Section</th>
+                                        <th class="py-3 px-4 text-left">Questions</th>
+                                        <th class="py-3 px-4 text-left">Time</th>
+                                        <th class="py-3 px-4 text-left">Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="py-3 px-4">Problem-Solving</td>
+                                        <td class="py-3 px-4">10</td>
+                                        <td class="py-3 px-4">30 minutes</td>
+                                        <td class="py-3 px-4">+4/-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Logical Reasoning</td>
+                                        <td class="py-3 px-4">10</td>
+                                        <td class="py-3 px-4">30 minutes</td>
+                                        <td class="py-3 px-4">+4/-1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Verbal Ability</td>
+                                        <td class="py-3 px-4">10</td>
+                                        <td class="py-3 px-4">30 minutes</td>
+                                        <td class="py-3 px-4">+4/-1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Mode: Paper-pencil test on OMR</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Date: May to August</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Venue: School Premises/ Nearest CL Centre</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Results: Declared in September</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-700">NAO Finals</h3>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                                <thead class="bg-blue-100">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">Section</th>
+                                        <th class="py-3 px-4 text-left">Questions</th>
+                                        <th class="py-3 px-4 text-left">Time</th>
+                                        <th class="py-3 px-4 text-left">Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="py-3 px-4">Problem-Solving</td>
+                                        <td class="py-3 px-4">20</td>
+                                        <td class="py-3 px-4">75 minutes</td>
+                                        <td class="py-3 px-4">1st 10: 1 mark, Next 10: 2 marks</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Logical Reasoning</td>
+                                        <td class="py-3 px-4">20</td>
+                                        <td class="py-3 px-4">75 minutes</td>
+                                        <td class="py-3 px-4">1st 10: 1 mark, Next 10: 2 marks</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4">Verbal Ability</td>
+                                        <td class="py-3 px-4">20</td>
+                                        <td class="py-3 px-4">75 minutes</td>
+                                        <td class="py-3 px-4">1st 10: 1 mark, Next 10: 2 marks</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Mode: Paper-pencil test on OMR/Online</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Date: November 2025</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                    <span>Place: Delhi</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Section -->
+    <section id="preparation" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How to Prepare for the Olympiad</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8 items-center mb-12">
+                <div class="lg:w-1/2">
+                    <img src="https://www.careerlauncher.com/olympiad/images/Learning-cuate.svg" alt="Preparation" class="w-full max-w-md mx-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <p class="text-lg mb-6">Competing in the Olympiad with fellow students and doing well requires thorough preparation. Along with assistance in your academic pursuit, the Olympiad will also provide students with the opportunity to grab exciting rewards.</p>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Preparation Tips:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Go through the brief syllabus and understand each unit</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Organize your routine and make a suitable timetable</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Analyze and estimate the difficulty level of the Olympiad</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Practise MCQ questions from various sources</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Explore and understand the rewards to set targets</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Register Now</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Register as a student</h3>
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-blue-700">₹150</span>
+                        </div>
+                        <div class="text-center">
+                            <button class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Register your school</h3>
+                        <p class="mb-6 text-center">Submit the form below to register your school and our city representative will get in touch with you for further guidance on conducting the Olympiad in your school.</p>
+                        <p class="text-sm text-gray-600 mb-6 text-center">(If you choose "others" as your state or city, please choose your mode of examination as online)</p>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">School Name</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Contact Person</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>How do I participate in the National Aptitude Olympiad?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>You can participate in two ways:</p>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li>Your school registers on behalf of its students</li>
+                                <li>You can register on your own by clicking the Register Now button</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>I missed registering through my school. Can I still participate?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>If you missed the school registration, you can register online as an individual participant.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>Are the tests available in languages other than English?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>No. The National Aptitude Olympiad is only being conducted in the English language.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>When is the Olympiad being conducted?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>Prelims will be conducted as per the school's discretion between May to August. The national final will be conducted in November.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>What is the eligibility criteria to participate?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>Any student from classes 8th to 12th can appear for the test.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion bg-white rounded-xl shadow-md overflow-hidden">
+                    <button class="accordion-btn w-full text-left p-6 font-bold text-lg flex justify-between items-center focus:outline-none">
+                        <span>Is it an MCQ based paper?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-0">
+                        <div class="pb-6">
+                            <p>Yes, it is an MCQ-based paper with 4 options available for each question.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8">
+                <div class="md:w-1/3">
+                    <img src="https://www.careerlauncher.com/olympiad/aptitude/images/CareerLauncherAptitudeOlympiadblack.png" alt="Career Launcher" class="h-12 mb-4">
+                    <p class="mb-4">Founded in 1995, Career Launcher (CL) started by helping students with MBA entrance exams. Over the years, it's grown into a major education player in India.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-white">About NAO</a></li>
+                        <li><a href="#structure" class="text-gray-300 hover:text-white">Olympiad Structure</a></li>
+                        <li><a href="#preparation" class="text-gray-300 hover:text-white">Preparation Tips</a></li>
+                        <li><a href="#register" class="text-gray-300 hover:text-white">Register</a></li>
+                        <li><a href="#faq" class="text-gray-300 hover:text-white">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Career Launcher India Ltd, New Delhi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>+91 11 4053 6600</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@careerlauncher.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Career Launcher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordion = button.parentElement;
+                accordion.classList.toggle('active');
+                
+                const icon = button.querySelector('i');
+                icon.classList.toggle('rotate-180');
+                
+                const content = button.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                        document.getElementById('mobile-menu').classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

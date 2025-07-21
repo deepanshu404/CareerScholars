@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Career Scholars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .contact-form input, .contact-form textarea, .contact-form select {
+            transition: all 0.3s ease;
+        }
+        .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+        .contact-form input:hover, .contact-form textarea:hover, .contact-form select:hover {
+            border-color: #93c5fd;
+        }
+        .map-container {
+            height: 100%;
+            min-height: 300px;
+        }
+        @media (min-width: 1024px) {
+            .map-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../assests/logo/logo.png" alt="Oracle Global Education Logo" class="h-20">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Courses</a>
+                <a href="#" class="text-blue-600 font-medium">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">Get in touch with our team for more information about our programs and services.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 contact-form">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-gray-700 font-medium mb-2 text-white">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-gray-700 font-medium mb-2 text-white">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2 text-white">Email Address*</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2 text-white">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-medium mb-2 text-white ">Subject*</label>
+                        <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            <option value="">Select Subject</option>
+                            <option value="Admissions">SSC</option>
+                            <option value="Courses">JE</option>
+                            <option value="Partnership">Foreign Languages</option>
+                            <option value="Other">Tuitions</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-2 text-white">Message*</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Head Office</h3>
+                                <p class="text-gray-600"> B-57, Ground Floor, opp. Metro Pillar Number 605, Block-B, New Krishna Park, Vikaspuri, New Delhi, Delhi, 110018</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Phone</h3>
+                                <p class="text-gray-600">+91 096679 74697</p>
+                                <p class="text-gray-600">+91 096679 74697 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+                                <p class="text-gray-600"> info@careerscholars.com</p>
+                                <p class="text-gray-600"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Working Hours</h3>
+                                <p class="text-gray-600">Monday - Sunday: 9:00 AM - 6:00 PM</p>
+                                <p class="text-gray-600"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1132.002033396208!2d77.07471086964561!3d28.629030275621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04c11244ee5b%3A0x779117ef3e081cf3!2s605%2C%20opp.%20Metro%20Pillar%20No%2C%20Block-B%2C%20Shankar%20Garden%2C%20Vikaspuri%2C%20Delhi%2C%20110018!5e1!3m2!1sen!2sin!4v1753081709349!5m2!1sen!2sin" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="../assests/logo/logo.png" alt="Career Scholars" class="h-20 mb-4">
+                    <p class="text-gray-400">Empowering students with world-class education and global opportunities.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Programs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Admissions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Undergraduate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Postgraduate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Professional Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Online Learning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Short Courses</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-gray-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Career Scholars. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form Validation with Better Feedback
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const country = document.getElementById('country').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Enhanced validation with field highlighting
+            let isValid = true;
+            const requiredFields = ['firstName', 'lastName', 'email', 'country', 'subject', 'message'];
+            
+            requiredFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (!field.value.trim()) {
+                    field.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+            
+            if (!isValid) {
+                // Scroll to first invalid field
+                const firstInvalid = document.querySelector('.border-red-500');
+                firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Create success message element
+                const successMsg = document.createElement('div');
+                successMsg.className = 'mt-4 p-4 bg-green-100 text-green-800 rounded-lg';
+                successMsg.innerHTML = `
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Thank you, ${firstName}! Your message has been sent successfully. We'll get back to you soon.
+                `;
+                
+                // Insert after form
+                this.parentNode.insertBefore(successMsg, this.nextSibling);
+                
+                // Reset form and button
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                
+                // Remove success message after 5 seconds
+                setTimeout(() => {
+                    successMsg.remove();
+                }, 5000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Career Scholars - Best Coaching for SSC, JE, CUET, ForeignLanguages, Tuitions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 12px;
+      }
+    }
+
+    .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('./assests/homePage/coveerImage/coverPage.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white py-1 sm:py-2 px-2 sm:px-4 text-xs sm:text-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-200"><i class="fas fa-phone-alt mr-1"></i> +91 96679 74697</a>
+        <a href="#" class="hover:text-blue-200"><i class="fas fa-envelope mr-1"></i> info@careerscholars.com</a>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-blue-200"><i class="fas fa-user mr-1"></i> Login</a>
+        <a href="#" class="hover:text-blue-200"><i class="fas fa-lock mr-1"></i> Student Portal</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Navigation -->
+     <nav class="bg-white text-gray-900 shadow-md sticky top-0 z-50 h-20">
+    <div class="container mx-auto px-20 py-3 h-full">
+      <div class="flex justify-between items-center h-full">
+        <div class="flex items-center">
+          <img src="./assests/logo/logo.png" alt="Career Launcher Logo" class="h-16 md:h-24" />
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <div class="dropdown relative group">
+            <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center py-2">
+              Courses <i class="fas fa-chevron-down ml-1 text-xs transition-transform duration-200"></i>
+            </button>
+            <div class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-48 z-50">
+              <a href="./scc-jee/scc.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">SSC</a>
+              <a href="./scc-jee/scc.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">JE (M/E/C)</a>
+              <a href="./cuet/cuet.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">CUET</a>
+              <a href="./forengLang/FNL.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Foreign Languages</a>
+              <a href="./tution/TH.html" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Tuitions</a>
+            </div>
+          </div>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium py-2">About Us</a>
+          <a href="./contact/contact.html" class="text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+          <a href="./contact/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-300">
+            Free Demo
+          </a>
+        </div>
+
+        <div class="md:hidden flex items-center space-x-4">
+          <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-4 py-3 space-y-4">
+        <div class="dropdown relative">
+          <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center justify-between w-full py-2">
+            Courses <i class="fas fa-chevron-down ml-1 text-xs transition-transform duration-200"></i>
+          </button>
+          <div class="dropdown-menu hidden bg-gray-50 rounded-md mt-2 py-2 pl-4 space-y-2">
+            <a href="./scc-jee/scc.html" class="block py-2 text-gray-700 hover:text-blue-600">SSC</a>
+            <a href="./scc-jee/scc.html" class="block py-2 text-gray-700 hover:text-blue-600">JE (Mechanical/Civil/Electrical)</a>
+            <a href="./cuet/cuet.html" class="block py-2 text-gray-700 hover:text-blue-600">CUET UG/PG</a>
+            <a href="./forengLang/FNL.html" class="block py-2 text-gray-700 hover:text-blue-600">Foreign Languages</a>
+            <a href="./tution/TH.html" class="block py-2 text-gray-700 hover:text-blue-600">Tuitions</a>
+          </div>
+        </div>
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium py-2">About Us</a>
+        <a href="./contact/contact.html" class="block text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+        <a href="./contact/contact.html" class="block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md text-center transition duration-300">
+          Free Demo
+        </a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+      <section class="hero-section text-white pt-32 pb-12 md:pt-40 md:pb-20 lg:pt-48 lg:pb-32">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Delhi's Most Trusted Preperation Institute</h1>
+      <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-3xl mx-auto">5+ Years of Excellence | 2500+ Students</p>
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full transition duration-300">
+          Explore Courses <i class="fas fa-arrow-down ml-2"></i>
+        </button>
+        <a href="./contact/contact.html">
+        <button class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+          Free Demo Class
+        </button></a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Courses Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Courses</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+                <!-- Course Card 1 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-blue-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">SSC Preparation</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Complete preparation for SSC CGL, CHSL, MTS and other SSC exams with comprehensive coverage.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 400+ Hours of Classes</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 40+ Mock Tests</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Current Affairs Updates</li>
+                        </ul>
+                        <a href="./scc-jee/scc.html"><button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Know More
+                        </button></a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 2 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-purple-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">JE (M/E/C) Preparation</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Specialized program for Junior Engineer exams in Mechanical, Electrical and Civil streams.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 450+ Hours of Classes</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Technical Subject Focus</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Previous Year Papers Analysis</li>
+                        </ul>
+                        <a href="./scc-jee/scc.html"><button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Know More
+                        </button></a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 3 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-green-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">CUET Preparation</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Comprehensive program for Central Universities Entrance Test covering all domains.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 350+ Hours of Classes</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Domain-Specific Modules</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> General Test Practice & Strategies
+                            </li>
+                        </ul>
+                        <a href="./cuet/cuet.html"><button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Know More
+                        </button></a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 4 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-yellow-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">Foreign Languages</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Learn French, Spanish, German and more with certified native-speaking instructors.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> A1 to C2 Level Courses</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> Conversation Practice</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> Certification Preparation</li>
+                        </ul>
+                        <a href="./forengLang/FNL.html"><button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Know More
+                        </button></a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 5 -->
+                <div class="course-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="bg-red-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">School Tuitions</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Personalized tutoring for CBSE, ICSE and State Boards from Class 8-12.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> All Subjects Covered</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> Regular Progress Reports</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 py-2"></i> Exam Preparation</li>
+                        </ul>
+                        <a href="./tution/TH.html"><button class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+                            Know More
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose Career Scholars?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Expert Faculty</h3>
+                    <p class="text-gray-600">Learn from IIM/IIT alumni and industry experts with 15+ years of teaching experience.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-open text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Comprehensive Study Material</h3>
+                    <p class="text-gray-600">Curated content with 5000+ practice questions and 100+ mock tests.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Personalized Attention</h3>
+                    <p class="text-gray-600">Small batch sizes with individual mentorship and doubt-solving sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Success Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Book a free counseling session with our experts to find the right program for you.</p>
+            <a href="./contact/contact.html"><button class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition duration-300">
+                Book Free Session
+            </button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+                <div>
+                    <img src="./assests/logo/logo.png" alt="Career Scholars" class="h-20 mb-4">
+                    <p class="text-gray-400">5+ years of excellence in test preparation. Helping students achieve their dream careers since 2020.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./scc-jee/scc.html" class="text-gray-400 hover:text-white">SSC</a></li>
+                        <li><a href="./scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Mechanical)</a></li>
+                        <li><a href="./scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Electrical)</a></li>
+                        <li><a href="./scc-jee/scc.html" class="text-gray-400 hover:text-white">JE (Civil)</a></li>
+                        <li><a href="./cuet/cuet.html" class="text-gray-400 hover:text-white">CUET UG/PG</a></li>
+                        <li><a href="./forengLang/FNL.html" class="text-gray-400 hover:text-white">Foreign Languages</a></li>
+                        <li><a href="./tution/TH.html" class="text-gray-400 hover:text-white">School Tuitions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">Head Office:  B-57, Ground Floor, opp. Metro Pillar Number 605, Block-B, New Krishna Park, Vikaspuri, Delhi, 110018</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">+91 096679-74697</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">info@careerscholars.com</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 CareerScholars. All Rights Reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms & Conditions</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+    <button class="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 sm:p-4 shadow-lg transition duration-300">
+      <i class="fas fa-comment-dots text-lg sm:text-xl"></i>
+    </button>
+  </div>
+
+   <script>
+    // Simple mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
