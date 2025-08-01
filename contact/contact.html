@@ -62,50 +62,58 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Contact Form -->
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 contact-form">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
-                <form id="contactForm" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="firstName" class="block text-gray-700 font-medium mb-2 text-white">First Name*</label>
-                            <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="lastName" class="block text-gray-700 font-medium mb-2 text-white">Last Name*</label>
-                            <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-gray-700 font-medium mb-2 text-white">Email Address*</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                    
-                    <div>
-                        <label for="phone" class="block text-gray-700 font-medium mb-2 text-white">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                    </div>
-                
-                    <div>
-                        <label for="subject" class="block text-gray-700 font-medium mb-2 text-white ">Subject*</label>
-                        <select id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                            <option value="">Select Subject</option>
-                            <option value="Admissions">SSC</option>
-                            <option value="Courses">JE</option>
-                            <option value="Partnership">Foreign Languages</option>
-                            <option value="Other">Tuitions</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block text-gray-700 font-medium mb-2 text-white">Message*</label>
-                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-                        Send Message
-                    </button>
-                </form>
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+
+    <form action="https://formsubmit.co/puransingh@designncode.org" method="POST" class="space-y-6">
+        <!-- Disable CAPTCHA (optional) -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Redirect after submission (optional) -->
+        <!-- <input type="hidden" name="_next" value=""> -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label for="firstName" class="block text-white font-medium mb-2">First Name*</label>
+                <input type="text" id="firstName" name="First Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
             </div>
+            <div>
+                <label for="lastName" class="block text-white font-medium mb-2">Last Name*</label>
+                <input type="text" id="lastName" name="Last Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+            </div>
+        </div>
+
+        <div>
+            <label for="email" class="block text-white font-medium mb-2">Email Address*</label>
+            <input type="email" id="email" name="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+            <label for="phone" class="block text-white font-medium mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+            <label for="subject" class="block text-white font-medium mb-2">Subject*</label>
+            <select id="subject" name="Subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                <option value="">Select Subject</option>
+                <option value="Tuitions">Become a Partner</option>
+                <option value="SSC">SSC</option>
+                <option value="JE">JE</option>
+                <option value="Foreign Languages">Foreign Languages</option>
+                <option value="Tuitions">Tuitions</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message" class="block text-white font-medium mb-2">Message*</label>
+            <textarea id="message" name="Message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+            Send Message
+        </button>
+        </form>
+    </div>
+
             
             <!-- Contact Info -->
             <div class="space-y-8">
@@ -140,7 +148,7 @@
                             </div>
                             <div>
                                 <h3 class="text-lg font-semibold text-gray-800">Email</h3>
-                                <p class="text-gray-600"> info@careerscholars.com</p>
+                                <p class="text-gray-600"> puransingh@designncode.org</p>
                                 <p class="text-gray-600"></p>
                             </div>
                         </div>
