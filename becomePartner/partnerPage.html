@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerScholars Franchise in India</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .stats-card {
+            transition: all 0.3s ease;
+        }
+        .stats-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../assests/logo/logo.png" alt="CareerScholars Logo" class="h-12">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#scope" class="text-blue-600 font-medium hover:text-blue-800">Franchise Scope</a>
+                <a href="#why" class="text-gray-700 font-medium hover:text-blue-600">Why CareerScholars?</a>
+                <a href="#support" class="text-gray-700 font-medium hover:text-blue-600">Franchise Support</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-blue-600">FAQ</a>
+                <a href="../contact/contact.html" class="text-gray-700 font-medium hover:text-blue-600">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <a href="#scope" class="block py-2 text-blue-600 font-medium">Franchise Scope</a>
+            <a href="#why" class="block py-2 text-gray-700 font-medium">Why CareerScholars ?</a>
+            <a href="#support" class="block py-2 text-gray-700 font-medium">Franchise Support</a>
+            <a href="#faq" class="block py-2 text-gray-700 font-medium">FAQ</a>
+            <a href="../contact/contact.html" class="text-gray-700 font-medium hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">CareerScholars Franchise Opportunity</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Join Delhi's leading SSC/JE/CUET training network and build a profitable business with our proven franchise model</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="../contact/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">Apply Now</a>
+                <a href="../becomePartner/partnerPage.html" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-lg transition duration-300">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="stats-card bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">15+</div>
+                    <div class="text-gray-700">Years of Experience</div>
+                </div>
+                <div class="stats-card bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">200+</div>
+                    <div class="text-gray-700">Franchise Centers</div>
+                </div>
+                <div class="stats-card bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">50K+</div>
+                    <div class="text-gray-700">Students Trained</div>
+                </div>
+                <div class="stats-card bg-blue-50 p-6 rounded-lg text-center">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">30-70%</div>
+                    <div class="text-gray-700">ROI Potential</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Scope Section -->
+    <section id="scope" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Franchise Scope</h2>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6">In the modern era of rapid technological advancement, the demand for technically skilled professionals is at an all-time high. Competitive exams like SSC JE, State JE Exams, and CUET (for B.Tech and technical programs) are increasingly focusing not just on theoretical knowledge, but also on practical and application-based skills.</p>
+                <p class="text-lg text-gray-700 mb-6">Every year, more than 15 lakh engineering graduates and around 5 lakh diploma holders pass out from over 10,000 technical institutions in India. This large pool of talent needs proper guidance and standardized training to match the evolving demands of both government and private sector job roles.</p>
+                <p class="text-lg text-gray-700 mb-6">The job market is shifting — recruiters are now looking for candidates who can solve real-world problems, understand engineering drawings, apply basic design and software tools, and communicate technical concepts clearly.</p>
+                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Why Invest in CareerScholars Franchise?</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>Lucrative opportunity with high ROI potential (30-70%)</li>
+                        <li>Rising demand for job-oriented training across engineering and technical fields</li>
+                        <li>Proven business model with strong support from an experienced team</li>
+                        <li>Benefit from Industry 4.0 trends driving demand for skilled professionals</li>  
+                        <li>Versatile applications across multiple sectors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why CareerScholars Section -->
+    <section id="why" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose CareerScholars Franchise?</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-medal text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Proven Business Model</h3>
+                    </div>
+                    <p class="text-gray-700">CareerScholars offers a tried-and-tested business model that has delivered success to numerous franchisees. With our expert guidance, you can avoid the pitfalls of starting a business from scratch.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Comprehensive Training</h3>
+                    </div>
+                    <p class="text-gray-700">We provide extensive training programs not only for your students but also for you and your instructors. This ensures high-quality education delivery consistently.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-headset text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">24×7 Support System</h3>
+                    </div>
+                    <p class="text-gray-700">Our dedicated team offers continuous guidance and support, helping you navigate challenges and seize opportunities in the market with round-the-clock assistance.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-bullhorn text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Marketing Assistance</h3>
+                    </div>
+                    <p class="text-gray-700">We provide extensive marketing assistance, including marketing collateral and strategies to promote your center locally. Our strong online presence gives you a competitive edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Support Section -->
+    <section id="support" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Franchise Support</h2>
+            <div class="max-w-5xl mx-auto">
+                <!-- Tabs Navigation -->
+                <div class="flex flex-wrap border-b border-gray-200 mb-8">
+                    <button class="tab-btn px-4 py-2 font-medium text-blue-600 border-b-2 border-blue-600" data-tab="startup">Start-up Support</button>
+                    <button class="tab-btn px-4 py-2 font-medium text-gray-600 hover:text-blue-600" data-tab="training">Training</button>
+                    <button class="tab-btn px-4 py-2 font-medium text-gray-600 hover:text-blue-600" data-tab="books">Books & Certificates</button>
+                    <button class="tab-btn px-4 py-2 font-medium text-gray-600 hover:text-blue-600" data-tab="marketing">Marketing Support</button>
+                    <button class="tab-btn px-4 py-2 font-medium text-gray-600 hover:text-blue-600" data-tab="student">Student Support</button>
+                </div>
+                
+                <!-- Tab Contents -->
+                <div id="startup" class="tab-content active">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">Start-up Support</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Welcome kit</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Promotional material and stationery</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Office setup guidance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Recruitment assistance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Inauguration support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">Training & Setup</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Counselling training</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Marketing trainings</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Panel Trainings</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>SEO and listing on web</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="training" class="tab-content">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold mb-4">Training Support</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Monthly online Technical trainings</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>On Demand technical trainings</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Offline training at various parts of country</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Sharing based training facility</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="books" class="tab-content">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold mb-4">Books & Certificates</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Comprehensive course material</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Paper and digital book options</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Paper and digital exercise books</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Online solutions for exercise</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Physical & Digital course certificate</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Free Workshop certificates</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="marketing" class="tab-content">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold mb-4">Marketing Support</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Dedicated Support staff</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Common digital marketing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Promotional & Gift Item</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Seminar & Presentation facilities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Yearly centralised events</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Centralised lead Generation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>National level Competitions</span>
+                                
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Inquiry follow ups</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Common toll-free no.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Graphics design Facility</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="student" class="tab-content">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-semibold mb-4">Student Support</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Online panel</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Online tutorial</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Free student kit</span>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Placement alerts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Design uploads</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Online certifications</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">How can I apply for a CareerScholars franchise?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">You can apply through the web at Contact Page or call at +919667974697. Our executive shall contact to answer your queries. On confirmation, our executives shall visit the location and an agreement is signed up on satisfactory completion of norms.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">What is the investment range for a CareerScholars franchise?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">The investment range varies from different factors depending upon the city and infrastructure.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">Can anyone open a CareerScholars franchise?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">Off course, any person with a general managerial skills and zeal to run a business can open the CareerScholars.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">How much time is given to make the center operational?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">2 months are given to make centre operational from the date of booking. For delayed case, it needs to be decided initially.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">What is the expected ROI from a CareerScholars franchise?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">The profit and ROI depend on the city, Business volume & working attitude, however, a return of 30-50% can be expected in the first year and 50-70% in subsequent years.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">What about books and study materials?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">Books are given on very nominal cost for generalised courses. An electronic version of books is also available.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 7 -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <button class="faq-btn flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-semibold">Is the franchise fee recurring?</h3>
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </button>
+                    <div class="faq-content mt-4 hidden">
+                        <p class="text-gray-700">No, the franchise fee is payable once, however, a very nominal amount needs to be paid every year as renewal fees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Start Your CareerScholars Franchise?</h2>
+                <p class="text-xl mb-8">Join Delhi's leading SSC/JE/CUET training network and build a successful business with our proven franchise model.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="tel:+91707355921" class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-lg transition duration-300">
+                        <i class="fas fa-phone mr-2"></i> Call Now: +91 09667974697
+                    </a>
+                    <a href="../index.html" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                        <i class="fas fa-globe mr-2"></i> Visit Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="../assests/logo/logo.png" alt="CareerScholars Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Delhi's leading SSC/JE/CUET training institute with a network of 20+ franchise centers across the country.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#scope" class="text-gray-400 hover:text-white">Franchise Scope</a></li>
+                        <li><a href="#why" class="text-gray-400 hover:text-white">Why CareerScholars ?</a></li>
+                        <li><a href="#support" class="text-gray-400 hover:text-white">Franchise Support</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="../contact/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>B-57, Ground Floor, opp. Metro Pillar Number 605, Block-B, New Krishna Park, Vikaspuri, New Delhi, Delhi, 110018</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3"></i>
+                            <span>+91 09667974697</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@careerscholars.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-blue-400 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CareerScholars India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('text-blue-600', 'border-blue-600');
+                    btn.classList.add('text-gray-600', 'hover:text-blue-600');
+                });
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('text-blue-600', 'border-blue-600');
+                button.classList.remove('text-gray-600', 'hover:text-blue-600');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // FAQ accordion
+        const faqButtons = document.querySelectorAll('.faq-btn');
+        
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
